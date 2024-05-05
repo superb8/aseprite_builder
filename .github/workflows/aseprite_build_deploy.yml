@@ -81,8 +81,8 @@ jobs:
           repository: 'aseprite/skia'
           latest: true
           fileName: "Skia-${{ runner.os }}-Release-x64+(*|-libstd*).zip"
-          zipBall: true
           extract: true
+          out-file-path: "skia"
       - name: Download Aseprite release
         run: |
           curl -o Aseprite-source.zip -L ${{ needs.check-version.outputs.download_url }}
