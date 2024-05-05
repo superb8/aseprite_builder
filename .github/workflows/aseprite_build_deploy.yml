@@ -80,7 +80,7 @@ jobs:
         with:
           repository: 'aseprite/skia'
           latest: true
-          fileName: "Skia-${{ runner.os }}-Release-X64"
+          fileName: "Skia-${{ runner.os }}-Release-x64+(*|-libstd*).zip"
           zipBall: true
           extract: true
       - name: Download Aseprite release
