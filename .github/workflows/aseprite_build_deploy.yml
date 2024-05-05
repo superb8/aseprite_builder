@@ -75,8 +75,8 @@ jobs:
       - name: (macOS) Install dependencies
         if: matrix.os == 'macOS-latest'
         run: brew install ninja p7zip
-      - name: Download Skia if not in cache
-        uses: robinraju/release-downloader@v1
+      - name: Download Skia
+        uses: robinraju/release-downloader@v1.10
         with:
           repository: 'aseprite/skia'
           latest: true
